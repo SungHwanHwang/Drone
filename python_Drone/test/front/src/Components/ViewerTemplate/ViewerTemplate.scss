@@ -1,0 +1,28 @@
+@import './src/styles/utils.scss';
+
+.viewer-template {
+    header {
+        background: $oc-gray-9;
+        height: 3rem;
+        color: white;
+
+        display: flex;
+        align-items: center;
+        //display: flex; 상태에서 item 가운데 정렬
+        justify-content: center;
+
+        font-size: 1.5rem;
+        font-weight: 600;
+        
+        // 태블릿 사이즈에서  폰트 크기 줄이기
+        @include media("<tablet") {
+            font-size: 1.25rem;
+        }
+    }
+
+    .viewer-wrapper {
+        position: relative;
+        width: 100%;
+        height: calc(100vh - 5rem);
+    }
+}

@@ -76,18 +76,25 @@ function sendCommand(command) {
 const amount = 100;
 const Commands = () => (
   <CommandGrid>
+
     <button className="rotate" onClick={sendCommand('ccw 90')}>
       <span className="symbol">⟲</span> 90°
     </button>
+
     <button onClick={sendCommand(`forward ${amount}`)}>
       <span className="symbol">↑</span> forward {amount}cm
     </button>
+
     <button className="rotate" onClick={sendCommand('cw 15')}>
       <span className="symbol">⟳</span> 15°
     </button>
+
+
     <button onClick={sendCommand(`left ${amount}`)}>
       <span className="symbol">←</span> left {amount}cm
     </button>
+
+
     <div className="center">
       <button className="takeoff" onClick={sendCommand('takeoff')}>
         Take Off
@@ -99,6 +106,8 @@ const Commands = () => (
         !! emergency !!
       </button>
     </div>
+
+
     <button onClick={sendCommand(`right ${amount}`)}>
       <span className="symbol">→</span>
       right {amount}cm
