@@ -1,0 +1,13 @@
+@import './src/styles/utils.scss';
+.sv-session {
+
+    box-shadow: inset 0 0 0 1px #000;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 5px;
+
+    .status {
+        grid-column: 1 / -1;
+        text-align: center;
+        color: white;
+    }   
+}
